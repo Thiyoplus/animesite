@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+video{
+    filter: contrast(1.1);
+    top: 0;
+    position: fixed; 
+    right: 0;
+    bottom:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+.container{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.container .content{
+    height:80vh;
+    width: 70%;
+    margin-top: 7.5%;
+}
+.container .content nav{
+    margin: 20px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container .content nav img{
+    height: 100%;
+}
+.container .content nav h2{
+    letter-spacing: 0.5px;
+    font-variant: small-caps;
+    margin:10px;
+}
+.container .content h3{
+    letter-spacing: 0.5px;
+    font-variant: small-caps;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 20px;
+}
+.container .content p{
+    font-variant: small-caps;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 20px;
+    width: 80%;
+    letter-spacing: 0.3px;
+}
+.container .content button{
+    font-variant: small-caps;
+    margin: 20px;
+    padding: 10px;
+    border-width: 0.1px;
+    border-color: white;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: medium;
+    cursor: pointer;
+}
+.container .content button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-color: transparent;
+}
+@media screen and (max-width:600px){
+.container .content{
+    text-align: start;
+    margin-bottom: 20%;
+    margin-top: 15%;
+}
+}
+@media screen and (min-width:600px) {
+    .container .content{
+        text-align: start;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width:768px){
+    .container .content{
+        text-align: start;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+@media screen and (min-width:992px){
+    .container .content{
+        text-align: start;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+@media screen and (min-width:1200px){
+    .container .content{
+        text-align: start;
+        margin-bottom: 10%;
+        margin-top: 7.5%;
+    }
+}
