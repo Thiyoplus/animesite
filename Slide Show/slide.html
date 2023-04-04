@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Project/kisspng-t-shirt-samurai-warrior-sweatshirt-5cc825d1a820c7.6029819615566207536887.png" type="image/x-icon">
+    <link rel="stylesheet" href="slide.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiyo F</title>
+</head>
+<body>
+    <div class="anime">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" id="radio1" name="slide">
+            <input type="radio" id="radio2" name="slide">
+            <input type="radio" id="radio3" name="slide">
+            <input type="radio" id="radio4" name="slide">
+            <input type="radio" id="radio5" name="slide">
+            <input type="radio" id="radio6" name="slide">
+            <input type="radio" id="radio7" name="slide">
+            <div class="slide first">
+                <img src="./Project/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./Project/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./Project/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./Project/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./Project/5.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./Project/6.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./Project/7.jpg" alt="">
+            </div>
+            <div class="auto">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+                <div class="auto4"></div>
+                <div class="auto5"></div>
+                <div class="auto6"></div>
+                <div class="auto7"></div>
+            </div>
+        </div>
+        <div class="manual">
+            <label class="manuals" for="radio1"></label>
+            <label class="manuals" for="radio2"></label>
+            <label class="manuals" for="radio3"></label>
+            <label class="manuals" for="radio4"></label>
+            <label class="manuals" for="radio5"></label>
+            <label class="manuals" for="radio6"></label>
+            <label class="manuals" for="radio7"></label>
+        </div>
+    </div>
+</div>
+<script>
+var counter = 1;
+setInterval(function(){
+    document.getElementById("radio" + counter).checked = true;
+    counter = counter + 1;
+    if(counter>7){
+        counter = 1;
+    }
+},4000);
+</script>
+</body>
+</html>
